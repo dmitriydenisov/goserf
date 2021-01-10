@@ -41,3 +41,13 @@
         margin-bottom: 20px;
     }
 }
+.slider-arrow {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    z-index: 2;
+    cursor: pointer;
+    &__left {
+        right: 125px;
+    }
+}
