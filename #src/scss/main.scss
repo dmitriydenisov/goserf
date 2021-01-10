@@ -1,0 +1,43 @@
+@import "_global";
+
+.header {
+
+}
+.header__slider {
+    &-item{
+        position: relative;
+        height: 100vh;
+        background-image: url(../img/header/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.slider-item__info {
+    position: absolute;
+    right: 80px;
+    bottom: 116px;
+    text-align: right;
+    color: #fff;
+}
+.slider-item__info {
+    &-title {
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 86px;
+        color: #FFFFFF;
+        margin-bottom: 48px;
+    }
+    &-suptitle {
+        margin-bottom: 5px;
+    }
+    &-suptext {
+        margin-bottom: 8px;
+    }
+    &-text {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 46px;
+        margin-bottom: 20px;
+    }
+}
