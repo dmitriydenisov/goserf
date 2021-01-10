@@ -3,7 +3,14 @@ $(function (){
         infinite: true,
         fade: true,
         prevArrow: '<img class="slider-arrow slider-arrow__left" src="img/icons/arrow-left.svg"></img>',
-        nextArrow: '<img class="slider-arrow slider-arrow__right" src="img/icons/arrow-right.svg"></img>'
+        nextArrow: '<img class="slider-arrow slider-arrow__right" src="img/icons/arrow-right.svg"></img>',
+        asNavFor: '.slider-dots',
+    });
+
+    $('.slider-dots').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        asNavFor: '.header__slider',
     });
 })
 

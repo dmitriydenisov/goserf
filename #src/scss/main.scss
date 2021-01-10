@@ -51,3 +51,16 @@
         right: 125px;
     }
 }
+.slider-dots {
+    position: absolute;
+    right: 80px;
+    bottom: 40px;
+    max-width: 920px;
+    width: 100%;
+    color: #fff;
+}
+.dots-box {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
