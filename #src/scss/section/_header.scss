@@ -96,5 +96,66 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;   
+    z-index: 2; 
+    height: 100vh;  
+    border-right: 1px solid rgba(#fff, .25);
+    text-align: center;
+    color: #fff;
+}
+.menu {
+    padding-top: 40px;
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        a {
+            color: #fff;
+            span {
+                display: block;
+                padding-top: 6px;
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+.header__date {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 64px;
+    margin-bottom: 30px;
+    span {
+        display: block;
+        padding-top: 15px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        opacity: .5;
+    }
+}
+.header__search {
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
+
+.header__location {
+    position: relative;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.05px;
+    padding-left: 19px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 11px;
+        height: 13px;
+        background-image: url(../img/nav/mapmark.svg);
+    }
 }
