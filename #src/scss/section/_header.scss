@@ -13,14 +13,12 @@
     right: 80px;
     bottom: 116px;
     text-align: right;
-    color: #fff;
 }
 .slider-item__info {
     &-title {
         font-weight: 800;
         font-size: 80px;
         line-height: 86px;
-        color: #FFFFFF;
         margin-bottom: 48px;
     }
     &-suptitle {
@@ -52,7 +50,6 @@
     bottom: 35px;
     max-width: 920px;
     width: 100%;
-    color: #fff;
     .slick-current {
         .dots-box{
             border-top: 4px solid $green;
@@ -76,6 +73,7 @@
     }
     &__name {
         font-weight: 300;
+        text-transform: capitalize;
     }
 }
 .header-title {
@@ -85,8 +83,6 @@
     font-weight: 800;
     font-size: 200px;
     line-height: 156px;
-    text-transform: uppercase;
-    color: #FFFFFF;
     opacity: 0.07;
 }
 .header__aside{
@@ -106,7 +102,6 @@
         margin: 0;
         padding: 0;
         a {
-            color: #fff;
             span {
                 display: block;
                 padding-top: 6px;
@@ -114,6 +109,7 @@
                 font-weight: 500;
                 font-size: 12px;
                 line-height: 14px;
+                text-transform: capitalize;
                 letter-spacing: 3px;
             }
         }
@@ -145,6 +141,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 1.05px;
+    text-transform: capitalize;
     padding-left: 19px;
     &:before {
         content: "";
