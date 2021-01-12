@@ -1,3 +1,12 @@
 .surf{
     padding: 160px 0 210px;
+    background-image: url(../img/icons/serf-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right 200px;
+    background-size: auto;
+}
+.serf__subtitle{
+    text-align: right;
+    padding-right: 80px;
+    transform: translateY(-100%);
 }

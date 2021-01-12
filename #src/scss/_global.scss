@@ -23,7 +23,7 @@ ul.li {
     max-width: 1920px;
     margin: 0 auto;
 }
-.suptitle-left {
+.headline-left {
     display: inline-block;
     font-size: 22px;
     line-height: 32px;
@@ -65,6 +65,18 @@ ul.li {
             width: 80px;
             height: 1px;
             background-color: $green;
+        }
+    }
+}
+.subtitle {
+    display: inline-block;
+    text-align: right;
+    &__head{
+        font-weight: 800;
+        font-size: 40px;
+        padding-right: 10px;
+        span {
+            font-weight: 100;
         }
     }
 }
