@@ -5,9 +5,9 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Go Serf
         link(rel="stylesheet", href="libs/normalize/normalize.css")
-        link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+        link(rel="stylesheet" type="text/css" href="libs/slick/slick.css")
         link(rel="preconnect" href="https://fonts.gstatic.com")
-        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100,300;400;500;800&display=swap")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;800&display=swap")
         link(rel="stylesheet", href="libs/animatecss/animate.css")
         link(rel="stylesheet" href="css/main.min.css")
     body
@@ -111,7 +111,8 @@ html(lang="en")
                 a(href="#").animate__animated.animate__fadeInDown.animate__slow.animate__infinite
                     img(src="img/icons/arrow-bottom.svg", alt="")
         .container
-            section.surf
+            
+            section.serf
                 .title
                     span serf
                         h3 surf
@@ -121,15 +122,56 @@ html(lang="en")
                         .subtitle__head California 
                             span | 
                             |USA
+                
                 .serf__slider
-                    .serf-box
+                    .serf-box(style="background-image: url(/img/surf/slide-1.jpg);")
                         .serf-box__inner
-                        .serf-box__inner-title
-                        .serf-box__inner-location
-                        .btn-box
-                            a.btn(href="#")
-                                |view 
-                                span serf
+                            .serf-box__inner-title Malibu Beach
+                            .serf-box__inner-location California <span>|</span> USA
+                            .serf-box__inner-btn
+                                a(class="btn" href="#") view <span>serf</span>       
+                    .serf-box(style="background-image: url(/img/surf/slide-2.jpg);")
+                        .serf-box__inner
+                            .serf-box__inner-title Airlie Beach
+                            .serf-box__inner-location Queensland <span>|</span> Australia
+                            .serf-box__inner-btn
+                                a(class="btn" href="#") view <span>serf</span>       
+                    .serf-box(style="background-image: url(/img/surf/slide-3.jpg);")
+                        .serf-box__inner
+                            .serf-box__inner-title Cloud Nine
+                            .serf-box__inner-location Siargao <span>|</span> Philippines
+                            .serf-box__inner-btn
+                                a(class="btn" href="#") view <span>serf</span>       
+                    .serf-box(style="background-image: url(/img/surf/slide-4.jpg);")
+                        .serf-box__inner
+                            .serf-box__inner-title Vieux Boucau
+                            .serf-box__inner-location Hossegor <span>|</span> France
+                            .serf-box__inner-btn
+                                a(class="btn" href="#") view <span>serf</span>       
+                    .serf-box(style="background-image: url(/img/surf/slide-1.jpg);")
+                        .serf-box__inner
+                            .serf-box__inner-title Malibu Beach
+                            .serf-box__inner-location California <span>|</span> USA
+                            .serf-box__inner-btn
+                                a(class="btn" href="#") view <span>serf</span>       
+                    .serf-box(style="background-image: url(/img/surf/slide-2.jpg);")
+                        .serf-box__inner
+                            .serf-box__inner-title Airlie Beach
+                            .serf-box__inner-location Queensland <span>|</span> Australia
+                            .serf-box__inner-btn
+                                a(class="btn" href="#") view <span>serf</span>       
+                    .serf-box(style="background-image: url(/img/surf/slide-3.jpg);")
+                        .serf-box__inner
+                            .serf-box__inner-title Cloud Nine
+                            .serf-box__inner-location Siargao <span>|</span> Philippines
+                            .serf-box__inner-btn
+                                a(class="btn" href="#") view <span>serf</span>       
+                    .serf-box(style="background-image: url(/img/surf/slide-4.jpg);")
+                        .serf-box__inner
+                            .serf-box__inner-title Vieux Boucau
+                            .serf-box__inner-location Hossegor <span>|</span> France
+                            .serf-box__inner-btn
+                                a(class="btn" href="#") view <span>serf</span>                        
             section.travel
                 .title
                     span travel
@@ -142,6 +184,6 @@ html(lang="en")
                 .title
                     span shop
                         h3 shop
-    script(src="https://code.jquery.com/jquery-3.5.1.slim.js")                
-    script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+    script(src="libs/jquery/jquery.js")                
+    script(type="text/javascript" src="libs/slick/slick.min.js")
     script(src="js/main.min.js")

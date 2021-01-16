@@ -1,4 +1,5 @@
 $(function (){
+
     $('.header__slider').slick({
         infinite: true,
         fade: true,
@@ -12,7 +13,14 @@ $(function (){
         slidesToScroll: 4,
         asNavFor: '.header__slider',
     });
-})
+
+    $('.serf__slider').slick({        
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<img class="slider-arrow slider-arrow__left" src="img/icons/arrow-left.svg"></img>',
+        nextArrow: '<img class="slider-arrow slider-arrow__right" src="img/icons/arrow-right.svg"></img>',
+    });
+});
 
 
 
