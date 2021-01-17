@@ -26,6 +26,24 @@ ul.li {
     max-width: 1920px;
     margin: 0 auto;
 }
+.headline-right {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    opacity: 0.5;
+    padding-right: 103px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        right: 0;
+        top: 50%;
+    }
+}
 .headline-left {
     display: inline-block;
     font-size: 22px;
@@ -83,6 +101,16 @@ ul.li {
         }
     }
 }
+.descr{
+    display: inline-block;
+    &__head{
+        font-weight: 800;
+        font-size: 40px;
+        span {
+            font-weight: 100;
+        }
+    }
+}
 .btn {
     font-weight: 800;
     font-size: 40px;
@@ -113,4 +141,7 @@ ul.li {
             background-image: url(../img/icons/arrow-right.svg);
         }
     }
+}
+.surf, .travel{
+    padding: 160px 0 120px;
 }

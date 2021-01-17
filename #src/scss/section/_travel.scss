@@ -1,0 +1,16 @@
+.travel{
+    background-image: url(../img/travel/travel-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.travel-slider{
+    &__head{
+        background-repeat: no-repeat;
+        background-position: top left;
+        min-height: 780px;
+        // background-size: contain;
+    }
+    &__descr{
+
+    }
+}
