@@ -14,7 +14,7 @@ $(function (){
         asNavFor: '.header__slider',
     });
 
-    $('.serf__slider').slick({        
+    $('.surf__slider').slick({        
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: '<img class="slider-arrow slider-arrow__left" src="img/icons/arrow-left.svg"></img>',
@@ -26,7 +26,7 @@ $(function (){
         slidesToShow: 8,
         slidesToScroll: 1,
         arrows:false,
-        asNavFor: '.serf__slider',
+        asNavFor: '.surf__slider',
         focusOnSelect: true
     });
 });
