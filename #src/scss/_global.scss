@@ -80,3 +80,34 @@ ul.li {
         }
     }
 }
+.btn {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    span{
+        position: relative;
+        display: inline-block;
+        padding: 17px 57px 15px 17px;
+        background-color: #4AF6CD;
+        margin-left: 19px;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 1px;
+            background-color: #fff;
+            top: 50%;
+            left: -10px;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+            width: 27px;
+            height: 21px;
+            background-image: url(../img/icons/arrow-right.svg);
+        }
+    }
+}

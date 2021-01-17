@@ -1,5 +1,5 @@
 .serf{
-    padding: 160px 0 210px;
+    padding: 160px 0 120px;
     background-image: url(../img/icons/serf-bg.svg);
     background-repeat: no-repeat;
     background-position: right 200px;
@@ -16,14 +16,73 @@
         top: 50px;
         opacity: .25;
     }
+    .slick-slide{
+        outline: none;
+    }
+    .slick-slide:nth-child(4n+1){
+        .serf-box{
+            margin-top: 32px;
+        }
+    }
+    .slick-slide:nth-child(4n + 3){
+        .serf-box{
+            margin-top: 89px;
+        }
+    }
+    .slick-current{
+        .serf-box__inner-btn{
+            display: block;
+        }
+        .serf-box__inner{
+            background-color: rgba(#1C2121, .3);
+        }
+    }
 }
 .serf-box{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     &__inner{
+        position: relative;
         min-height: 750px;
         background-color: rgba(#1C2121, .85);
-
+        transition: all .5s;
+        &:hover{
+            background-color: rgba(#1C2121, .3);
+            .serf-box__inner-btn{
+                display: block;
+            }
+        }
+        &-title{
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 36px;
+            padding: 72px 0 0 40px;
+            width: 140px;
+        }
+        &-location{
+            position: absolute;
+            left: 40px;
+            bottom: 80px;
+            width: 0;
+            height: 0;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 8px;
+            transform: rotate(-90deg);
+            white-space: nowrap;
+            span{
+                font-weight: 100;
+            }
+        }
+        &-btn{
+            position: absolute;
+            left: 45px;
+            bottom: 0; 
+            left: 0;
+            right: 0;
+            display: none;
+            text-align: center;
+        }
     }
 }
