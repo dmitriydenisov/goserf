@@ -103,6 +103,7 @@ ul.li {
 }
 .descr{
     display: inline-block;
+    padding-left: 5px;
     &__head{
         font-weight: 800;
         font-size: 40px;
@@ -144,4 +145,7 @@ ul.li {
 }
 .surf, .travel{
     padding: 160px 0 120px;
+}
+.travel{
+    padding-bottom: 265px;
 }
