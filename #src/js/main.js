@@ -29,7 +29,7 @@ $(function (){
         asNavFor: '.surf__slider',
         focusOnSelect: true
     });
-    $('.holder__slider').slick({
+    $('.holder__slider, .shop__slider').slick({
         infinite:true,
         fade:true,
         prevArrow: '<img class="slider-arrow slider-arrow__left" src="img/icons/arrow-left.svg"></img>',

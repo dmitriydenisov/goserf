@@ -2,6 +2,10 @@
     background-image: url(../img/shop/shop-bg.png);
     background-repeat: no-repeat;
     background-position: right center;
+    .slider-arrow{
+        opacity: .25;
+        top: -82px;
+    }
 }
 .shop__slider{
     padding-left: 132px;
@@ -33,11 +37,32 @@
     margin-bottom: 50px;
 }
 .surfboard{
-    position: relative;
-    &-box{
-        position: absolute;
+    position: relative;    
+}
+.surfboard-box{
+    position: absolute;        
+}
+.surfboard__position{
+    &--1{
         right: 40px;
-        top: 215px;        
+        top: 215px;
+    }
+    &--2{
+        left: -5px;
+        top: 290px
+    }
+    &--3{
+        left: 51px;
+        bottom: 68px;
+        .surfboard-box__content{
+            padding-left: 0;
+            padding-right: 104px;
+            left: -400px;
+            &::before {
+                right: 0;
+                left: auto;
+            }
+        }
     }
 }
 .surfboard-box__circle{
