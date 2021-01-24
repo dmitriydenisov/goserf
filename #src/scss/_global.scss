@@ -19,6 +19,12 @@ ul, li {
     margin: 0;
     padding: 0;
 }
+.star-list{
+    li{
+        display: inline-block;
+        margin-left: -25px;
+    }
+}
 .slick-slide{
     outline: none;
 }

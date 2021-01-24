@@ -1,5 +1,8 @@
 .holder{
     background-image: url(../img/travel/travel-bg.png);
+    &.sleep{
+        background-image: url(../img/travel/sleep-bg.png);
+    }
     background-repeat: no-repeat;
     background-position: bottom right;
     .slider-arrow{
@@ -21,10 +24,14 @@
         min-height: 320px;
         background-repeat: no-repeat;
         background-position: right center;
+        background-size: contain;
         
         .descr__head{
             position: relative;
-            padding-right: 215px;
+            padding-right: 68px;
+            &.sleep {
+                padding-right: 215px;
+            }
             img{
                 position: absolute;
                 top: 0;
@@ -34,10 +41,7 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                li{
-                    display: inline-block;
-                    margin-left: -25px;
-                }
+               
                 img{
                     position: static;
                 }
