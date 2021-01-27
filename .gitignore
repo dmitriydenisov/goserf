@@ -3,6 +3,6 @@
 # dependencies
 /node_modules
 /build
-/package-lock.json
+package-lock.json
 
-/debug.log
+debug.log
