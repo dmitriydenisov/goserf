@@ -49,7 +49,8 @@ let {src, dest} = require('gulp'),
     webphtml = require('gulp-webp-html'),
     webpcss = require('gulp-webpcss'),
     svgSprite = require('gulp-svg-sprite'),
-    formatHtml = require('gulp-format-html');
+    formatHtml = require('gulp-format-html'),
+    sourcemaps = require('gulp-sourcemaps');
 
     
 function browserSync() {
@@ -73,6 +74,7 @@ function html() {
 
 function css() {
   return src(path.src.css)
+    .pipe(sourcemaps.init())
     .pipe(
       scss({
         outputStyle: 'expanded'
@@ -89,12 +91,13 @@ function css() {
     )
     .pipe(webpcss())
     .pipe(dest(path.build.css))
-    .pipe(clean_css())
+    .pipe(clean_css())    
     .pipe(
       rename({
         extname: '.min.css'
       })
-      )
+      )        
+    .pipe(sourcemaps.write())
     .pipe(dest(path.build.css))
     .pipe(browsersync.stream())
 }
