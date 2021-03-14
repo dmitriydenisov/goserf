@@ -12,6 +12,12 @@ $(function (){
         slidesToShow: 4,
         slidesToScroll: 4,
         asNavFor: '.header__slider',
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings:'unslick'
+          },
+        ]
     });
 
     $('.surf__slider').slick({        
@@ -20,14 +26,54 @@ $(function (){
         prevArrow: '<img class="slider-arrow slider-arrow__left" src="img/icons/arrow-left.svg"></img>',
         nextArrow: '<img class="slider-arrow slider-arrow__right" src="img/icons/arrow-right.svg"></img>',
         asNavFor: '.slider-map',
+        responsive: [
+          {
+            breakpoint: 1210,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 521,
+            settings: {
+              slidesToShow: 1,
+            }
+          },
+        ]
 
     });
     $('.slider-map').slick({
-        slidesToShow: 8,
+        slidesToShow: 3,
         slidesToScroll: 1,
         arrows:false,
         asNavFor: '.surf__slider',
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 1101,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 1980,
+            settings: {
+              slidesToShow: 8,
+            }
+          }
+        ]
     });
     $('.holder__slider, .shop__slider').slick({
         infinite:true,
