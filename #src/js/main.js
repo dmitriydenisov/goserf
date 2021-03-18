@@ -36,43 +36,54 @@ $(function (){
           {
             breakpoint: 900,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 2
             }
           },
           {
-            breakpoint: 521,
+            breakpoint: 720,
             settings: {
               slidesToShow: 1,
+              centerMode: true,
+            }
+          },
+          {
+            breakpoint: 426,
+            settings: {
+              slidesToShow: 1,
+              centerMode: false,
             }
           },
         ]
 
     });
     $('.slider-map').slick({
-        slidesToShow: 3,
+        slidesToShow: 8,
         slidesToScroll: 1,
         arrows:false,
         asNavFor: '.surf__slider',
         focusOnSelect: true,
         responsive: [
           {
-            breakpoint: 900,
+            breakpoint: 720,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
+              centerMode: true,
             }
           },
           {
-            breakpoint: 1101,
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 2,
+              centerMode: true,
+            }
+          },
+          {
+            breakpoint: 1126,
             settings: {
               slidesToShow: 3,
             }
           },
-          {
-            breakpoint: 1980,
-            settings: {
-              slidesToShow: 8,
-            }
-          }
+          
         ]
     });
     $('.holder__slider, .shop__slider').slick({

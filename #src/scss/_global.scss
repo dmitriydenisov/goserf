@@ -54,9 +54,8 @@ ul, li {
 }
 .headline-left {
     display: inline-block;
-    // font-size: 22px;
     line-height: 1;
-    letter-spacing: 7.33333px;
+    letter-spacing: 3px;
     opacity: 0.5;
     padding-left: 103px;
     position: relative;
@@ -73,11 +72,11 @@ ul, li {
 .title{    
     span{
         display: inline-block;
-        font-size: 200px;
+        font-size: 100px;
+        padding-bottom: 80px;
         color: rgba(#fff, 0.02);  
         font-weight: 800;
         position: relative;
-        transform: translateX(-50px);
     }
     h3{
         position: absolute;
@@ -102,8 +101,7 @@ ul, li {
     text-align: right;
     &__head{
         font-weight: 800;
-        font-size: 40px;
-        padding-right: 10px;
+        font-size: 30px;
         span {
             font-weight: 100;
         }
