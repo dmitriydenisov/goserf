@@ -80,16 +80,16 @@
         top: 50px;
         opacity: .25;
     }
-    .slick-slide:nth-child(4n+1){
-        .surf-box{
-            margin-top: 32px;
-        }
-    }
-    .slick-slide:nth-child(4n + 3){
-        .surf-box{
-            margin-top: 89px;
-        }
-    }
+    // .slick-slide:nth-child(4n+1){
+    //     .surf-box{
+    //         margin-top: 32px;
+    //     }
+    // }
+    // .slick-slide:nth-child(4n + 3){
+    //     .surf-box{
+    //         margin-top: 89px;
+    //     }
+    // }
     .slick-current{
         .surf-box__inner-btn{
             display: block;

@@ -54,6 +54,20 @@
         }
     }
 }
+@media(min-width:900px){
+    .surf__slider {
+        .slick-slide:nth-child(4n+1){
+            .surf-box{
+                margin-top: 32px;
+            }
+        }
+        .slick-slide:nth-child(4n + 3){
+            .surf-box{
+                margin-top: 89px;
+            }
+        }
+    }
+}
 @media(min-width: 960px){
     .header__aside{
         position: absolute;
