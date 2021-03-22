@@ -69,6 +69,13 @@ ul, li {
         top: 50%;
     }
 }
+.holder{
+    .title{
+        span{
+            padding-bottom: 0;
+        }
+    }
+}
 .title{    
     span{
         display: inline-block;
@@ -150,10 +157,10 @@ ul, li {
     }
 }
 .surf, .holder{
-    padding: 160px 0 120px;
+    padding: 70px 0 50px;
 }
 .holder{
-    padding-bottom: 265px;
+    padding-bottom: 25px;
 }
 //-------------
 
