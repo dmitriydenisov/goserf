@@ -1,21 +1,14 @@
 .holder{
-    background-image: url(../img/travel/travel-bg.png);
-    &.sleep{
-        background-image: url(../img/travel/sleep-bg.png);
-    }
     background-repeat: no-repeat;
     background-position: bottom right;
     .slider-arrow{
-        top: 235px;
+        top: 130px;
         opacity: .25;
     }
 }
 .holder-slider{
-    &__head{
-        background-repeat: no-repeat;
-        background-position: top left;
-        min-height: 780px;
-        // background-size: contain;
+    &__head{        
+        min-height: 720px;
     }    
     &__descr{
         padding-top: 160px;
@@ -24,6 +17,8 @@
         min-height: 320px;
         background-repeat: no-repeat;
         background-size: contain;
+        background-position: right -33px;
+        
         
         .descr__head{
             position: relative;
@@ -49,8 +44,8 @@
     }
     &__subtitle{
         text-align: right;
-        padding-right: 80px;
-        padding-top: 135px;
+        padding-right: 20px;
+        padding-top: 60px;
     }
     &__btn{
         text-align: center;

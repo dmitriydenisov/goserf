@@ -36,21 +36,8 @@ $(function (){
           {
             breakpoint: 900,
             settings: {
-              slidesToShow: 2
-            }
-          },
-          {
-            breakpoint: 720,
-            settings: {
               slidesToShow: 1,
               centerMode: true,
-            }
-          },
-          {
-            breakpoint: 426,
-            settings: {
-              slidesToShow: 1,
-              centerMode: false,
             }
           },
         ]
@@ -64,23 +51,22 @@ $(function (){
         focusOnSelect: true,
         responsive: [
           {
-            breakpoint: 720,
+            breakpoint: 900,
             settings: {
               slidesToShow: 1,
               centerMode: true,
             }
           },
           {
-            breakpoint: 900,
+            breakpoint: 1210,
             settings: {
-              slidesToShow: 2,
-              centerMode: true,
+              slidesToShow: 3,
             }
           },
           {
-            breakpoint: 1126,
+            breakpoint: 1211,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 4,
             }
           },
           

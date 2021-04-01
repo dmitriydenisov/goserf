@@ -6,8 +6,38 @@
             height: 250px;
         }
     }
+    .subtitle {
+        &__head{
+            font-size: 25px;
+        }
+    }
+    
+    .btn {
+        font-size: 30px;
+    }
 }
 @media(min-width: 400px){
+    
+    .subtitle {
+        &__head{
+            font-size: 30px;
+        }
+    }
+    .title{    
+        span{
+            font-size: 100px;
+        }
+    }
+    .btn {
+        font-size: 40px;
+    }
+
+    .descr{
+        &__head{
+            font-size: 35px;
+        }
+    }        
+    
     .header-title{
         font-size: 130px;
     }
@@ -22,6 +52,19 @@
         width: 285px;
         padding: 28px 31px 0 32px;
     }
+}
+@media(min-width:450px){
+    .holder{
+        background-image: url(../img/travel/travel-bg.png);
+        &.sleep{
+            background-image: url(../img/travel/sleep-bg.png);
+        }
+    }
+    .descr{
+        &__head{
+            font-size: 40px;
+        }
+    } 
 }
 @media(min-width: 600px){
     .holder-slider__descr{
@@ -38,6 +81,7 @@
         }
     }
 }
+
 @media(min-width:779px){
     .holder{
         .title{
@@ -93,6 +137,23 @@
     .dots-box{
         width: 200px;
     }
+    .holder{
+        .slider-arrow{
+            top: 235px;
+        }
+    }
+    .holder-slider{
+        &__head{
+            background-repeat: no-repeat;
+            background-position: top left;
+            min-height: 780px;
+        } 
+        &__subtitle{
+            padding-right: 80px;
+            padding-top: 135px;
+        }
+    }
+    
 }
 @media(min-width: 1024px){
     .header__date{
