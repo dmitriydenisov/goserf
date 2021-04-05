@@ -6,6 +6,11 @@
         opacity: .25;
     }
 }
+.sleep .holder-slider{
+    &__descr{
+        background-position: right center;
+    }
+}
 .holder-slider{
     &__head{        
         min-height: 720px;
@@ -17,8 +22,7 @@
         min-height: 320px;
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: right -33px;
-        
+        background-position: right -33px;        
         
         .descr__head{
             position: relative;
@@ -52,8 +56,10 @@
     }
 }
 .holder-slider__info{
+    margin-bottom: 20px;
+
     &-item{
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         padding-left: 20px;
     }
     &-subtitle{
@@ -73,7 +79,6 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 36px;
-            text-align: right;
             letter-spacing: 0;
             opacity: 0.75;
         }

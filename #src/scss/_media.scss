@@ -156,6 +156,15 @@
     
 }
 @media(min-width: 1024px){
+    .quantity-button.quantity-up {
+        right: 0px;
+        left: auto;
+
+      }
+      
+      .quantity-button.quantity-down {
+        right: 25px;
+      }
     .header__date{
         padding: 15px;
     }
@@ -175,6 +184,40 @@
             }
         }
     }    
+    .holder{
+        padding-bottom: 265px;
+    }
+    .holder-slider__info{
+        display: flex;
+        justify-content: space-around;
+        // margin-bottom: 250px;
+        margin-bottom: 66px;
+
+        &-item{
+            position: relative;
+            min-height: 200px;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        &-subtitle{
+            position: absolute;
+            top: 100px;
+            left: -100px;
+            height: 0;
+            width: 200px;
+            text-align: right;
+            transform: rotate(-90deg);
+        }
+        &-title{
+            padding-left: 40px;
+        }
+    }
+}
+
+@media(min-width:1025px){
+    .holder-slider__descr{
+        background-position: right center;
+    }
 }
 @media(min-width: 1070px){
     .menu-btn{
@@ -215,40 +258,14 @@
     }
 }
 @media(min-width:1120px){
-    .holder-slider__info{
-        display: flex;
-        justify-content: space-around;
-        &-item{
-            position: relative;
-            margin-bottom: 66px;
-            min-height: 200px;
-            padding-left: 0;
-        }
-        &-subtitle{
-            position: absolute;
-            top: 100px;
-            left: -100px;
-            height: 0;
-            width: 200px;
-            text-align: right;
-            transform: rotate(-90deg);
-        }
-        &-title{
-            padding-left: 40px;
-        }
     
-    }
     .holder-slider{
         &__descr{
             padding-left: 135px;            
         }
     }
 }
-@media(min-width:1025px){
-    .holder-slider__descr {
-        background-position: right center;
-    }
-}
+
 @media(min-width:1249px){
     .slider-dots__content{
         display: block;
@@ -374,18 +391,25 @@
 @media(min-width: 1350px){
     .surf, .holder{
         padding: 160px 0 120px;
-    }
-    .holder{
-        padding-bottom: 265px;
-    }
+    }    
     .headline-left {
         font-size: 22px;
     }
+    .holder-slider__info{
+        &-title{
+         .holder-slider__info-title_span{
+             text-align: right;
+         }
+        }}
+
     .slider-item__info{
        right: 50px; 
     }
     .slider-item__info{
         padding-right: 50px;        
+    }
+    .holder-slider__info{
+        margin-bottom: 256px;
     }
 }
 @media(min-width: 1400px){
