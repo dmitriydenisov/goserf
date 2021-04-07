@@ -16,8 +16,7 @@
         font-size: 30px;
     }
 }
-@media(min-width: 400px){
-    
+@media(min-width: 400px){    
     .subtitle {
         &__head{
             font-size: 30px;
@@ -52,6 +51,11 @@
         width: 285px;
         padding: 28px 31px 0 32px;
     }
+    .holder-slider{ 
+        &__descr{
+            padding-top: 160px;
+        }
+    }
 }
 @media(min-width:450px){
     .holder{
@@ -63,12 +67,25 @@
     .descr{
         &__head{
             font-size: 40px;
+            .holder__star-list{
+                top: 0;
+                right: 0;
+            }
         }
     } 
+    .holder-slider__descr .descr__head .holder__star-list{
+        top: 0;
+        right: 0;
+    }
 }
 @media(min-width: 600px){
     .holder-slider__descr{
         background-position: right -119px;
+    }
+}
+@media only screen and (max-width: 610px){
+    .sleep .holder-slider__descr{
+        background-image: none !important;
     }
 }
 @media(min-width: 760px){

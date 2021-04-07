@@ -16,7 +16,7 @@
         min-height: 720px;
     }    
     &__descr{
-        padding-top: 160px;
+        padding-top: 120px;
         padding-left: 20px;
         margin-top: -230px;
         min-height: 320px;
@@ -37,8 +37,7 @@
             }
             .holder__star-list{
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: 25px;
                
                 img{
                     position: static;
