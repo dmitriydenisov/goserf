@@ -8,21 +8,23 @@
     }
 }
 .shop__slider{
-    padding-left: 132px;
+    padding-left: 20px;
     &-inner{
-        display: flex;
+        // display: flex;
+        // flex-direction: column;
     }
     &-info{
         max-width: 480px;
         width: 100%;
         margin-right: 40px;
-        padding-top: 150px;
+        padding-top: 55px;
+        padding-bottom: 50px;
     }
     &-price{
         font-weight: 800;
         font-size: 32px;
         line-height: 40px;
-        margin-bottom: 65px;
+        margin-bottom: 25px;
         sup{
             font-size: 18px;
             padding-left: 2px;
@@ -34,7 +36,7 @@
 }
 .descr__head-shop{
     max-width: 340px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .surfboard{
     position: relative;    
@@ -46,6 +48,9 @@
     &--1{
         right: 40px;
         top: 215px;
+        .surfboard-box__content{
+            left: -160px;
+        }
     }
     &--2{
         left: -5px;
@@ -55,13 +60,9 @@
         left: 51px;
         bottom: 68px;
         .surfboard-box__content{
-            padding-left: 0;
-            padding-right: 104px;
-            left: -400px;
-            &::before {
-                right: 0;
-                left: auto;
-            }
+            // padding-right: 104px;
+            left: 60px;
+            
         }
     }
 }
@@ -96,25 +97,15 @@
 .surfboard-box__content{
     display: none;
     position: absolute;
-    top: -15px;
-    left: 40px;
-    width: 360px;
+    top: 25px;
+    left: 0;
+    width: 285px;//360
     font-weight: 800;
     font-size: 24px;
     line-height: 24px;
-    padding-left: 104px;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 1px;
-        background-color: #fff;
-        left: 0;
-        top: 50%;
-    }
 }
 .shop__slider-content{
-    padding-left: 170px;
+    padding-left: 50px;
     display: flex;
     align-items: flex-end;
 }
