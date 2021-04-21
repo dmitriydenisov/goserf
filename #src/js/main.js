@@ -130,6 +130,9 @@ $('.surfboard-box__circle').on('click', function(){
 $('[data-menu]').on('click',function(){
   $('.menu').toggleClass('active');
 })
+
+
+new WOW().init();
 });
 
 

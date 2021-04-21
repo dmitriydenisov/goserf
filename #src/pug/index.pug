@@ -65,9 +65,9 @@ html(lang="en")
                 .header__slider-item.slider-item
                     .slider-item__info
                         .slider-item__info-suptitle.headline-left Surf
-                        .slider-item__info-title North Shore
+                        .slider-item__info-title.animate__animated.animate__fadeInLeft.delay-1.5s North Shore
                         .slider-item__info-suptext.headline-left Condition
-                        .slider-item__info-text Radical
+                        .slider-item__info-text.animate__animated.animate__fadeInRight.delay-1.5s Radical
                         a(href='#').slider-item__info-link 
                             img(src="img/icons/arrow-right.svg")
                 .header__slider-item.slider-item
@@ -95,19 +95,19 @@ html(lang="en")
                         a(href='#').slider-item__info-link 
                             img(src="img/icons/arrow-right.svg")
             .slider-dots--head
-                .slider-dots__item
+                .slider-dots__item.wow.animate__animated.animate__fadeInRight( data-wow-delay="1.3s")
                     .dots-box
                         .dots-box__number 01
                         .dots-box__name North Shore
-                .slider-dots__item
+                .slider-dots__item.wow.animate__animated.animate__fadeInRight( data-wow-delay="1.6s")
                     .dots-box
                         .dots-box__number 02
                         .dots-box__name South Shore
-                .slider-dots__item
+                .slider-dots__item.wow.animate__animated.animate__fadeInRight( data-wow-delay="1.9s")
                     .dots-box
                         .dots-box__number 03
                         .dots-box__name West Shore 
-                .slider-dots__item
+                .slider-dots__item.wow.animate__animated.animate__fadeInRight( data-wow-delay="2.5s")
                     .dots-box
                         .dots-box__number 04
                         .dots-box__name East Shore
@@ -117,10 +117,11 @@ html(lang="en")
         .container            
             section.surf
                 .title
-                    span surf
+                    div
+                        span.wow.animate__animated.animate__fadeInLeft(data-wow-offset="200") surf
                         h3 surf
                 .surf__subtitle
-                    .subtitle
+                    .subtitle.wow.animate__animated.animate__fadeInRight(data-wow-offset="200")
                         .headline-left Current location
                         .subtitle__head California 
                             span | 
@@ -303,28 +304,28 @@ html(lang="en")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
                 .surf__slider
-                    div
+                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="350" data-wow-delay=".3s")
                         .surf-box(style="background-image: url(img/surf/slide-1.jpg);")
                             .surf-box__inner
                                 .surf-box__inner-title Malibu Beach
                                 .surf-box__inner-location California <span>|</span> USA
                                 .surf-box__inner-btn
                                     a(class="btn" href="#") view <span>surf</span>   
-                    div    
+                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="350" data-wow-delay=".6s")    
                         .surf-box(style="background-image: url(img/surf/slide-2.jpg);")
                             .surf-box__inner
                                 .surf-box__inner-title Airlie Beach
                                 .surf-box__inner-location Queensland <span>|</span> Australia
                                 .surf-box__inner-btn
                                     a(class="btn" href="#") view <span>surf</span>     
-                    div  
+                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="350" data-wow-delay=".9s")  
                         .surf-box(style="background-image: url(img/surf/slide-3.jpg);")
                             .surf-box__inner
                                 .surf-box__inner-title Cloud Nine
                                 .surf-box__inner-location Siargao <span>|</span> Philippines
                                 .surf-box__inner-btn
                                     a(class="btn" href="#") view <span>surf</span>  
-                    div     
+                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="350" data-wow-delay="1.1s")     
                         .surf-box(style="background-image: url(img/surf/slide-4.jpg);")
                             .surf-box__inner
                                 .surf-box__inner-title Vieux Boucau
@@ -362,7 +363,8 @@ html(lang="en")
             section.holder
                 .container
                     .title
-                        span travel
+                        div
+                            span.wow.animate__animated.animate__fadeInLeft(data-wow-offset="200") travel
                             h3 travel
 
                     .holder__slider
@@ -370,25 +372,25 @@ html(lang="en")
                             .holder__slider-item.holder-slider
                                 .holder-slider__head(style="background-image: url(img/travel/travel-slider-bg.png)")
                                     .holder-slider__subtitle
-                                        .subtitle
+                                        .subtitle.wow.animate__animated.animate__fadeInRight(data-wow-offset="200")
                                             .headline-left Shore
                                             .subtitle__head Airlie Beach <span>|</span> Australia
-                                .holder-slider__descr(style="background-image: url(img/travel/airplane.png)")
+                                .holder-slider__descr(style="background-image: url(img/travel/airplane.png)").wow.animate__animated.animate__fadeInUp(data-wow-offset="350")
                                     .descr
                                             .headline-right Airline
                                             .descr__head Virgin Australia
                                                 img(src="img/travel/avia-logo.svg", alt="")
                                 .holder-slider__info
-                                    .holder-slider__info-item
+                                    .holder-slider__info-item.wow.animate__animated.animate__fadeInUp(data-wow-offset="350" data-wow-delay=".3s")
                                         .holder-slider__info-subtitle Destination
                                         .holder-slider__info-title Queensland <br> Australia
-                                    .holder-slider__info-item
+                                    .holder-slider__info-item.wow.animate__animated.animate__fadeInUp(data-wow-offset="350" data-wow-delay=".5s")
                                         .holder-slider__info-subtitle Distance
                                         .holder-slider__info-title 7,065 Miles
-                                    .holder-slider__info-item
+                                    .holder-slider__info-item.wow.animate__animated.animate__fadeInUp(data-wow-offset="350" data-wow-delay=".7s")
                                         .holder-slider__info-subtitle Travel Time
                                         .holder-slider__info-title 23 Hours <br> 5 Minutes
-                                    .holder-slider__info-item
+                                    .holder-slider__info-item.wow.animate__animated.animate__fadeInUp(data-wow-offset="350" data-wow-delay=".9s")
                                         .holder-slider__info-subtitle Pricing
                                         .holder-slider__info-title $1,976 USD 
                                             <span class="holder-slider__info-title_span">Round Trip</span>
@@ -580,14 +582,15 @@ html(lang="en")
             section.holder.sleep
                 .container
                     .title
-                        span sleep
+                        div
+                            span.wow.animate__animated.animate__fadeInLeft(data-wow-offset="200") sleep
                             h3 sleep
 
                     .holder__slider
                         .holder__slider-item.holder-slider
                             .holder-slider__head(style="background-image: url(img/travel/sleep-slider-bg.png)")
                                 .holder-slider__subtitle
-                                    .subtitle
+                                    .subtitle.wow.animate__animated.animate__fadeInRight(data-wow-offset="200")
                                         .headline-left Resorts
                                         .subtitle__head Auberge  <span>|</span> Australia 
                             .holder-slider__descr(style="background-image: url(img/travel/hammock.png)")
@@ -606,22 +609,22 @@ html(lang="en")
                                                 li  
                                                     img(src="img/travel/star.svg", alt="")
                             .holder-slider__info
-                                .holder-slider__info-item
+                                .holder-slider__info-item.wow.animate__animated.animate__fadeInUp(data-wow-offset="350" data-wow-delay=".3s")
                                     .holder-slider__info-subtitle Resort
                                     .holder-slider__info-title Auberge <br> Australia
-                                .holder-slider__info-item
+                                .holder-slider__info-item.wow.animate__animated.animate__fadeInUp(data-wow-offset="350" data-wow-delay=".5s")
                                     .holder-slider__info-subtitle # of Nights
                                     .holder-slider__info-title 
                                         .quantity
                                             input(class="nights" type="number" min="1" max="9" step="1" value="5") 
                                             |Nights
-                                .holder-slider__info-item
+                                .holder-slider__info-item.wow.animate__animated.animate__fadeInUp(data-wow-offset="350" data-wow-delay=".7s")
                                     .holder-slider__info-subtitle # of Guests
                                     .holder-slider__info-title 
                                         .quantity
                                             input(class="guests" type="number" min="1" max="9" step="1" value="4") 
                                             |Guests
-                                .holder-slider__info-item
+                                .holder-slider__info-item.wow.animate__animated.animate__fadeInUp(data-wow-offset="350" data-wow-delay=".9s")
                                     .holder-slider__info-subtitle Pricing
                                     .holder-slider__info-title <span class = "summ" data-nights="55" data-guests="25"></span> USD 
                                         <span class="holder-slider__info-title_span">Per Night</span>
@@ -918,7 +921,8 @@ html(lang="en")
                             a(class="btn" href="#") Book <span>Flight</span>   
             section.shop
                 .title
-                    span shop
+                    div
+                        span.wow.animate__animated.animate__fadeInLeft(data-wow-offset="200") shop
                         h3 shop
                 .shop__slider
                     .shop__slider-item
@@ -1039,4 +1043,5 @@ html(lang="en")
                 |© Go-Surf 2018. All Rights Reserved.
     script(src="libs/jquery/jquery.js")                
     script(type="text/javascript" src="libs/slick/slick.min.js")
+    script(type="text/javascript" src="libs/wow/wow.min.js")
     script(src="js/main.min.js")
