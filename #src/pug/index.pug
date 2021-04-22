@@ -65,9 +65,9 @@ html(lang="en")
                 .header__slider-item.slider-item
                     .slider-item__info
                         .slider-item__info-suptitle.headline-left Surf
-                        .slider-item__info-title.animate__animated.animate__fadeInLeft.delay-1.5s North Shore
+                        .slider-item__info-title.animate__animated.animate__fadeInLeft.animate__delay-1s North Shore
                         .slider-item__info-suptext.headline-left Condition
-                        .slider-item__info-text.animate__animated.animate__fadeInRight.delay-1.5s Radical
+                        .slider-item__info-text.animate__animated.animate__fadeInRight.animate__delay-1s Radical
                         a(href='#').slider-item__info-link 
                             img(src="img/icons/arrow-right.svg")
                 .header__slider-item.slider-item
@@ -94,20 +94,20 @@ html(lang="en")
                         .slider-item__info-text Radical
                         a(href='#').slider-item__info-link 
                             img(src="img/icons/arrow-right.svg")
-            .slider-dots--head
-                .slider-dots__item.wow.animate__animated.animate__fadeInRight( data-wow-delay="1.3s")
+            .slider-dots--head.animate__animated.animate__fadeInRight.animate__delay-1s
+                .slider-dots__item
                     .dots-box
                         .dots-box__number 01
                         .dots-box__name North Shore
-                .slider-dots__item.wow.animate__animated.animate__fadeInRight( data-wow-delay="1.6s")
+                .slider-dots__item
                     .dots-box
                         .dots-box__number 02
                         .dots-box__name South Shore
-                .slider-dots__item.wow.animate__animated.animate__fadeInRight( data-wow-delay="1.9s")
+                .slider-dots__item
                     .dots-box
                         .dots-box__number 03
                         .dots-box__name West Shore 
-                .slider-dots__item.wow.animate__animated.animate__fadeInRight( data-wow-delay="2.5s")
+                .slider-dots__item
                     .dots-box
                         .dots-box__number 04
                         .dots-box__name East Shore
@@ -118,7 +118,7 @@ html(lang="en")
             section.surf
                 .title
                     div
-                        span.wow.animate__animated.animate__fadeInLeft(data-wow-offset="200") surf
+                        span.wow.animate__animated.animate__fadeInLeft(data-wow-offset="200" data-wow-duration="1s") surf
                         h3 surf
                 .surf__subtitle
                     .subtitle.wow.animate__animated.animate__fadeInRight(data-wow-offset="200")
@@ -126,8 +126,8 @@ html(lang="en")
                         .subtitle__head California 
                             span | 
                             |USA
-                .slider-map
-                    .slider-dots.slider-dots--1
+                .slider-map.wow.animate__animated.animate__zoomInDown(data-wow-offset="300" data-wow-duration="1.5s")
+                    .slider-dots.slider-dots--1.wow.animate__animated.animate__backInDown(data-wow-duration="2.5s")
                         .slider-dots__circle
                         .slider-dots__content
                             .slider-dots__content-row
@@ -149,7 +149,7 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--2
+                    .slider-dots.slider-dots--2.wow.animate__animated.animate__fadeInUpBig(data-wow-duration="2.5s")
                         .slider-dots__circle
                         .slider-dots__content
                             .slider-dots__content-row
@@ -171,7 +171,7 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--3
+                    .slider-dots.slider-dots--3.wow.animate__animated.animate__fadeInTopLeft(data-wow-duration="4.5s")
                         .slider-dots__circle
                         .slider-dots__content
                             .slider-dots__content-row
@@ -193,7 +193,7 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--4
+                    .slider-dots.slider-dots--4.wow.animate__animated.animate__fadeInUpBig(data-wow-duration="3.5s")
                         .slider-dots__circle
                         .slider-dots__content
                             .slider-dots__content-row
@@ -215,7 +215,7 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--5
+                    .slider-dots.slider-dots--5.wow.animate__animated.animate__fadeInUpBig(data-wow-duration="2.5s")
                         .slider-dots__circle
                         .slider-dots__content
                             .slider-dots__content-row
@@ -237,7 +237,7 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--6
+                    .slider-dots.slider-dots--6.wow.animate__animated.animate__fadeInBottomRight(data-wow-duration="2.5s")
                         .slider-dots__circle
                         .slider-dots__content
                             .slider-dots__content-row
@@ -259,7 +259,7 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--7
+                    .slider-dots.slider-dots--7.wow.animate__animated.animate__fadeInRight(data-wow-duration="3.5s")
                         .slider-dots__circle
                         .slider-dots__content
                             .slider-dots__content-row
@@ -281,7 +281,7 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--8
+                    .slider-dots.slider-dots--8.wow.animate__animated.animate__fadeInRightBig(data-wow-duration="3.5s")
                         .slider-dots__circle
                         .slider-dots__content
                             .slider-dots__content-row
@@ -304,28 +304,28 @@ html(lang="en")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
                 .surf__slider
-                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="350" data-wow-delay=".3s")
+                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay=".3s")
                         .surf-box(style="background-image: url(img/surf/slide-1.jpg);")
                             .surf-box__inner
                                 .surf-box__inner-title Malibu Beach
                                 .surf-box__inner-location California <span>|</span> USA
                                 .surf-box__inner-btn
                                     a(class="btn" href="#") view <span>surf</span>   
-                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="350" data-wow-delay=".6s")    
+                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay=".6s")    
                         .surf-box(style="background-image: url(img/surf/slide-2.jpg);")
                             .surf-box__inner
                                 .surf-box__inner-title Airlie Beach
                                 .surf-box__inner-location Queensland <span>|</span> Australia
                                 .surf-box__inner-btn
                                     a(class="btn" href="#") view <span>surf</span>     
-                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="350" data-wow-delay=".9s")  
+                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay=".9s")  
                         .surf-box(style="background-image: url(img/surf/slide-3.jpg);")
                             .surf-box__inner
                                 .surf-box__inner-title Cloud Nine
                                 .surf-box__inner-location Siargao <span>|</span> Philippines
                                 .surf-box__inner-btn
                                     a(class="btn" href="#") view <span>surf</span>  
-                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="350" data-wow-delay="1.1s")     
+                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay="1.1s")     
                         .surf-box(style="background-image: url(img/surf/slide-4.jpg);")
                             .surf-box__inner
                                 .surf-box__inner-title Vieux Boucau
