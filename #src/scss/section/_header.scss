@@ -1,3 +1,23 @@
+.header__title {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    z-index: 1;
+    max-width: 467px;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 105px;
+    opacity: 0.07;        
+}
+.header__map{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    svg{
+        display: none;
+    }
+}
 .logo{
     img{
         width: 100px;
@@ -71,17 +91,7 @@
         text-transform: capitalize;
     }
 }
-.header-title {
-    position: absolute;
-    top: 20px;
-    left: 60px;
-    z-index: 1;
-    max-width: 467px;
-    font-weight: 800;
-    font-size: 90px;
-    line-height: 105px;
-    opacity: 0.07;        
-}
+
 .header__aside{
     position: absolute;
     top: 0;
@@ -178,15 +188,7 @@
         background-image: url(../img/nav/mapmark.svg);
     }
 }
-.header__map{
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    svg{
-        display: none;
-    }
-}
+
 .headline-left {
     font-size: 16px;
 }

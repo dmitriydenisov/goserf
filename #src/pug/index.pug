@@ -8,11 +8,12 @@ html(lang="en")
         link(rel="stylesheet" type="text/css" href="libs/slick/slick.css")
         link(rel="preconnect" href="https://fonts.gstatic.com")
         link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;800&display=swap")
-        link(rel="stylesheet", href="libs/animatecss/animate.css")
+        link(rel="stylesheet" href="libs/animatecss/animate.css")
         link(rel="stylesheet" href="css/main.min.css")
+
     body
         header.header
-            .header-title
+            .header__title
                 | go surf
             .header__map
                 <svg width="1001" height="496" viewBox="0 0 1001 496" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,9 +128,9 @@ html(lang="en")
                             span | 
                             |USA
                 .slider-map.wow.animate__animated.animate__zoomInDown(data-wow-offset="300" data-wow-duration="1.5s")
-                    .slider-dots.slider-dots--1.wow.animate__animated.animate__backInDown(data-wow-duration="2.5s")
-                        .slider-dots__circle
-                        .slider-dots__content
+                    .slider-dots.slider-dots--1
+                        .slider-dots__circle.wow.animate__animated.animate__fadeInUpBig(data-wow-delay="1s")
+                        .slider-dots__content.wow.animate__animated.animate__fadeIn(data-wow-delay="2.5s")
                             .slider-dots__content-row
                                 .slider-dots__content-head
                                     .slider-dots__title Malibu Beach
@@ -149,8 +150,8 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--2.wow.animate__animated.animate__fadeInUpBig(data-wow-duration="2.5s")
-                        .slider-dots__circle
+                    .slider-dots.slider-dots--2
+                        .slider-dots__circle.wow.animate__animated.animate__fadeInUpBig(data-wow-delay="1.2s")
                         .slider-dots__content
                             .slider-dots__content-row
                                 .slider-dots__content-head
@@ -171,8 +172,8 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--3.wow.animate__animated.animate__fadeInTopLeft(data-wow-duration="4.5s")
-                        .slider-dots__circle
+                    .slider-dots.slider-dots--3
+                        .slider-dots__circle.wow.animate__animated.animate__fadeInUpBig(data-wow-delay="1.3s")
                         .slider-dots__content
                             .slider-dots__content-row
                                 .slider-dots__content-head
@@ -193,8 +194,8 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--4.wow.animate__animated.animate__fadeInUpBig(data-wow-duration="3.5s")
-                        .slider-dots__circle
+                    .slider-dots.slider-dots--4
+                        .slider-dots__circle.wow.animate__animated.animate__fadeInUpBig(data-wow-delay="1.4s")
                         .slider-dots__content
                             .slider-dots__content-row
                                 .slider-dots__content-head
@@ -215,8 +216,8 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--5.wow.animate__animated.animate__fadeInUpBig(data-wow-duration="2.5s")
-                        .slider-dots__circle
+                    .slider-dots.slider-dots--5
+                        .slider-dots__circle.wow.animate__animated.animate__fadeInUpBig(data-wow-delay="1.5s")
                         .slider-dots__content
                             .slider-dots__content-row
                                 .slider-dots__content-head
@@ -237,8 +238,8 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--6.wow.animate__animated.animate__fadeInBottomRight(data-wow-duration="2.5s")
-                        .slider-dots__circle
+                    .slider-dots.slider-dots--6
+                        .slider-dots__circle.wow.animate__animated.animate__fadeInUpBig(data-wow-delay="1.6s")
                         .slider-dots__content
                             .slider-dots__content-row
                                 .slider-dots__content-head
@@ -259,8 +260,8 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--7.wow.animate__animated.animate__fadeInRight(data-wow-duration="3.5s")
-                        .slider-dots__circle
+                    .slider-dots.slider-dots--7
+                        .slider-dots__circle.wow.animate__animated.animate__fadeInUpBig(data-wow-delay="1.7s")
                         .slider-dots__content
                             .slider-dots__content-row
                                 .slider-dots__content-head
@@ -281,8 +282,8 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                    .slider-dots.slider-dots--8.wow.animate__animated.animate__fadeInRightBig(data-wow-duration="3.5s")
-                        .slider-dots__circle
+                    .slider-dots.slider-dots--8
+                        .slider-dots__circle.wow.animate__animated.animate__fadeInUpBig(data-wow-delay="1.8s")
                         .slider-dots__content
                             .slider-dots__content-row
                                 .slider-dots__content-head
@@ -304,28 +305,28 @@ html(lang="en")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
                 .surf__slider
-                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay=".3s")
+                    .wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay=".3s")
                         .surf-box(style="background-image: url(img/surf/slide-1.jpg);")
                             .surf-box__inner
                                 .surf-box__inner-title Malibu Beach
                                 .surf-box__inner-location California <span>|</span> USA
                                 .surf-box__inner-btn
                                     a(class="btn" href="#") view <span>surf</span>   
-                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay=".6s")    
+                    .wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay=".6s")    
                         .surf-box(style="background-image: url(img/surf/slide-2.jpg);")
                             .surf-box__inner
                                 .surf-box__inner-title Airlie Beach
                                 .surf-box__inner-location Queensland <span>|</span> Australia
                                 .surf-box__inner-btn
                                     a(class="btn" href="#") view <span>surf</span>     
-                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay=".9s")  
+                    .wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay=".9s")  
                         .surf-box(style="background-image: url(img/surf/slide-3.jpg);")
                             .surf-box__inner
                                 .surf-box__inner-title Cloud Nine
                                 .surf-box__inner-location Siargao <span>|</span> Philippines
                                 .surf-box__inner-btn
                                     a(class="btn" href="#") view <span>surf</span>  
-                    div.wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay="1.1s")     
+                    .wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay="1.1s")     
                         .surf-box(style="background-image: url(img/surf/slide-4.jpg);")
                             .surf-box__inner
                                 .surf-box__inner-title Vieux Boucau
@@ -393,8 +394,7 @@ html(lang="en")
                                     .holder-slider__info-item.wow.animate__animated.animate__fadeInUp(data-wow-offset="350" data-wow-delay=".9s")
                                         .holder-slider__info-subtitle Pricing
                                         .holder-slider__info-title $1,976 USD 
-                                            <span class="holder-slider__info-title_span">Round Trip</span>
-                        
+                                            <span class="holder-slider__info-title_span">Round Trip</span>                        
                         .holder__slider-item.holder-slider
                             .holder-slider__head(style="background-image: url(img/travel/travel-slider-bg.png)")
                                 .holder-slider__subtitle
@@ -445,8 +445,7 @@ html(lang="en")
                                 .holder-slider__info-item
                                     .holder-slider__info-subtitle Pricing
                                     .holder-slider__info-title $1,976 USD 
-                                        <span class="holder-slider__info-title_span">Round Trip</span>
-                    
+                                        <span class="holder-slider__info-title_span">Round Trip</span>                    
                         .holder__slider-item.holder-slider
                             .holder-slider__head(style="background-image: url(img/travel/travel-slider-bg.png)")
                                 .holder-slider__subtitle
@@ -471,8 +470,7 @@ html(lang="en")
                                 .holder-slider__info-item
                                     .holder-slider__info-subtitle Pricing
                                     .holder-slider__info-title $1,976 USD 
-                                        <span class="holder-slider__info-title_span">Round Trip</span>
-                    
+                                        <span class="holder-slider__info-title_span">Round Trip</span>                    
                         .holder__slider-item.holder-slider
                             .holder-slider__head(style="background-image: url(img/travel/travel-slider-bg.png)")
                                 .holder-slider__subtitle
@@ -497,8 +495,7 @@ html(lang="en")
                                 .holder-slider__info-item
                                     .holder-slider__info-subtitle Pricing
                                     .holder-slider__info-title $1,976 USD 
-                                        <span class="holder-slider__info-title_span">Round Trip</span>
-                    
+                                        <span class="holder-slider__info-title_span">Round Trip</span>                    
                         .holder__slider-item.holder-slider
                             .holder-slider__head(style="background-image: url(img/travel/travel-slider-bg.png)")
                                 .holder-slider__subtitle
@@ -523,8 +520,7 @@ html(lang="en")
                                 .holder-slider__info-item
                                     .holder-slider__info-subtitle Pricing
                                     .holder-slider__info-title $1,976 USD 
-                                        <span class="holder-slider__info-title_span">Round Trip</span>
-                    
+                                        <span class="holder-slider__info-title_span">Round Trip</span>                    
                         .holder__slider-item.holder-slider
                             .holder-slider__head(style="background-image: url(img/travel/travel-slider-bg.png)")
                                 .holder-slider__subtitle
@@ -549,8 +545,7 @@ html(lang="en")
                                 .holder-slider__info-item
                                     .holder-slider__info-subtitle Pricing
                                     .holder-slider__info-title $1,976 USD 
-                                        <span class="holder-slider__info-title_span">Round Trip</span>
-                    
+                                        <span class="holder-slider__info-title_span">Round Trip</span>                    
                         .holder__slider-item.holder-slider
                             .holder-slider__head(style="background-image: url(img/travel/travel-slider-bg.png)")
                                 .holder-slider__subtitle
@@ -718,19 +713,19 @@ html(lang="en")
                                         .subtitle__head Auberge  <span>|</span> Australia 
                             .holder-slider__descr(style="background-image: url(img/travel/hammock.png)")
                                 .descr
-                                        .headline-right Rating
-                                        .descr__head.sleep Excellent
-                                            ul.holder__star-list.star-list
-                                                li  
-                                                    img(src="img/travel/star.svg", alt="")
-                                                li  
-                                                    img(src="img/travel/star.svg", alt="")
-                                                li  
-                                                    img(src="img/travel/star.svg", alt="")
-                                                li  
-                                                    img(src="img/travel/star.svg", alt="")
-                                                li  
-                                                    img(src="img/travel/star.svg", alt="")
+                                    .headline-right Rating
+                                    .descr__head.sleep Excellent
+                                        ul.holder__star-list.star-list
+                                            li  
+                                                img(src="img/travel/star.svg", alt="")
+                                            li  
+                                                img(src="img/travel/star.svg", alt="")
+                                            li  
+                                                img(src="img/travel/star.svg", alt="")
+                                            li  
+                                                img(src="img/travel/star.svg", alt="")
+                                            li  
+                                                img(src="img/travel/star.svg", alt="")
                             .holder-slider__info
                                 .holder-slider__info-item
                                     .holder-slider__info-subtitle Resort
