@@ -62,7 +62,7 @@ html(lang="en")
                     span 06 | 2018
                 .header__location
                     |California          
-            .header__slider
+            .header__slider(data-header-slider="")
                 .header__slider-item.slider-item
                     .slider-item__info
                         .slider-item__info-suptitle.headline-left Surf
@@ -95,7 +95,7 @@ html(lang="en")
                         .slider-item__info-text Radical
                         a(href='#').slider-item__info-link 
                             img(src="img/icons/arrow-right.svg")
-            .slider-dots--head.animate__animated.animate__fadeInRight.animate__delay-1s
+            .slider-dots--head.animate__animated.animate__fadeInRight.animate__delay-1s(data-header-dots="")
                 .slider-dots__item
                     .dots-box
                         .dots-box__number 01
@@ -127,7 +127,7 @@ html(lang="en")
                         .subtitle__head California 
                             span | 
                             |USA
-                .slider-map.wow.animate__animated.animate__zoomInDown(data-wow-offset="300" data-wow-duration="1.5s")
+                .slider-map.wow.animate__animated.animate__zoomInDown(data-slider-map="" data-wow-offset="300" data-wow-duration="1.5s")
                     .slider-dots.slider-dots--1
                         .slider-dots__circle.wow.animate__animated.animate__fadeInUpBig(data-wow-delay="1s")
                         .slider-dots__content.wow.animate__animated.animate__fadeIn(data-wow-delay="2.5s")
@@ -304,7 +304,7 @@ html(lang="en")
                                     img(src="img/icons/wind.svg", alt="")
                                     .slider-dots__number 4 SE
                                     .slider-dots__name Wind (KTS)
-                .surf__slider
+                .surf__slider(data-surf-slider="")
                     .wow.animate__animated.animate__fadeInDown(data-wow-offset="150" data-wow-delay=".3s")
                         .surf-box(style="background-image: url(img/surf/slide-1.jpg);")
                             .surf-box__inner
@@ -368,7 +368,7 @@ html(lang="en")
                             span.wow.animate__animated.animate__fadeInLeft(data-wow-offset="200") travel
                             h3 travel
 
-                    .holder__slider
+                    .holder__slider(data-holder-slider="")
                         div
                             .holder__slider-item.holder-slider
                                 .holder-slider__head(style="background-image: url(img/travel/travel-slider-bg.png)")
@@ -581,7 +581,7 @@ html(lang="en")
                             span.wow.animate__animated.animate__fadeInLeft(data-wow-offset="200") sleep
                             h3 sleep
 
-                    .holder__slider
+                    .holder__slider(data-holder-slider="")
                         .holder__slider-item.holder-slider
                             .holder-slider__head(style="background-image: url(img/travel/sleep-slider-bg.png)")
                                 .holder-slider__subtitle
@@ -919,7 +919,7 @@ html(lang="en")
                     div
                         span.wow.animate__animated.animate__fadeInLeft(data-wow-offset="200") shop
                         h3 shop
-                .shop__slider
+                .shop__slider(data-shop-slider="")
                     .shop__slider-item
                         .shop__slider-inner
                             .shop__slider-info
@@ -1040,3 +1040,4 @@ html(lang="en")
     script(type="text/javascript" src="libs/slick/slick.min.js")
     script(type="text/javascript" src="libs/wow/wow.min.js")
     script(src="js/main.min.js")
+    script(src="js/initlibs.min.js")
