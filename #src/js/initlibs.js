@@ -80,7 +80,6 @@ $(function (){
     });
 
 
-    $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/icons/plus.svg"></img></div><div class="quantity-button quantity-down"><img src="img/icons/minus.svg"></img></div></div>').insertAfter('.quantity input');
     $('.quantity').each(function() {
       var spinner = $(this),
         input = spinner.find('input[type="number"]'),
