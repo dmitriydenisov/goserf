@@ -80,6 +80,7 @@ $(function (){
     });
 
 
+<<<<<<< HEAD
     $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/icons/plus.svg"></img></div><div class="quantity-button quantity-down"><img src="img/icons/minus.svg"></img></div></div>').insertAfter('.quantity input');
     $('.quantity').each(function() {
       var spinner = $(this),
@@ -122,6 +123,9 @@ $('.quantity-button').on('click', function () {
   let summ = $('.nights').val() * $('.summ').data('nights') + ($('.guests').val() - 1) * $('.summ').data('guests');
   $('.summ').html('$' + summ);
 })
+=======
+    
+>>>>>>> main
 
 
 new WOW().init();
