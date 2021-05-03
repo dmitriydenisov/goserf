@@ -44,16 +44,51 @@ const summElement = document.querySelector('.summ')
 const sumNights = document.querySelector('.summ').dataset.nights
 const sumGuests = document.querySelector('.summ').dataset.guests
 
-
-function sum(){
-  const nights = document.querySelector('.nights').value
-  const guests = document.querySelector('.guests').value
-  let summ = nights * sumNights + (guests - 1) * sumGuests
-  summElement.innerHTML = `$ ${summ}`
-}
-
-sum()
-
 document.querySelectorAll(".quantity-button").forEach(btn=> {
   btn.addEventListener("click", sum)
 })
+
+const nightsElement = []
+const guestsElement = []
+let countElement = 0
+
+function addResult() {
+    document.querySelectorAll(".quantity").forEach((item) => {
+        if (countElement % 2 == 0) {
+            nightsElement.push(item)
+        } else {
+            guestsElement.push(item)
+        }
+        countElement++
+    })
+
+    if (countElement == 16) {
+        const summ = document.querySelectorAll(".summ")
+        for (let i in nightsElement) {
+            const nights = nightsElement[i].querySelector(".nights").value
+            const guests = guestsElement[i].querySelector(".guests").value
+            const sum = nights * sumNights + (guests - 1) * sumGuests
+            summ[i].innerText = `$ ${sum}`
+        }
+    }
+}
+
+addResult()
+
+function sum() {
+  if (this !== window) {
+      parent = this.parentNode
+      parent = parent.parentNode
+      parent = parent.parentNode
+      parent = parent.parentNode
+      parent = parent.parentNode
+       let nights = parent.querySelectorAll(".holder-slider__info-item")[1]
+      let guests = parent.querySelectorAll(".holder-slider__info-item")[2]
+      nights = nights.querySelector(".holder-slider__info-title>.quantity>.nights").value
+      guests = guests.querySelector(".holder-slider__info-title>.quantity>.guests").value
+      sumElement = parent.querySelectorAll(".holder-slider__info-item")[3]
+      const summ = nights * sumNights + (guests - 1) * sumGuests
+      sumElement = sumElement.querySelector(".holder-slider__info-title>.summ").innerText = `$ ${summ}`
+  }
+}
+sum()
